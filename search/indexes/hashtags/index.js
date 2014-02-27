@@ -24,4 +24,10 @@ function (doc) {
     }
 
     index("stream", doc.stream);
+    index("hashtag", doc.data.hashtag, { facet: true });
+    index("year", year);
+    index("month", month);
+    index("day", day);
+    index("hour", hour);
+    index("timestamp", timestamp);
 }
